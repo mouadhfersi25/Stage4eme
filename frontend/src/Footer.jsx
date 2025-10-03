@@ -1,56 +1,67 @@
 import React from 'react';
-import { Link } from 'react-router-dom'; // Importez Link depuis react-router-dom
-import { FaEnvelope, FaPhoneAlt, FaArrowRight, FaLinkedin } from 'react-icons/fa';
+import { Link } from 'react-router-dom';
+import { FaYoutube, FaFacebook, FaLinkedin } from 'react-icons/fa'; // Import des icônes
 import './Footer.css';
 
 const Footer = () => {
   return (
     <footer className="modern-footer">
       <div className="footer-container">
-        <div className="footer-brand">
-          <h3>VisShop AI</h3>
-          <p>Empowering retailers with AI and computer vision solutions</p>
-          <div className="social-links">
-            <a 
-              href="https://www.linkedin.com/company/visshop-ai/posts/?feedView=all" 
-              target="_blank" 
-              rel="noopener noreferrer"
-              aria-label="VisShop AI LinkedIn"
-            >
-              <FaLinkedin className="social-icon" />
-            </a>
+        <div className="footer-brand left-aligned"> {/* Ajout de la classe left-aligned */}
+          <h3>visshopAI</h3>
+          <p>AI Powered Solution for Physical Retail Store.</p>
+          <div className="email-subscribe-container">
+            <input 
+              type="email" 
+              placeholder="Enter your email" 
+              className="email-input" 
+            />
+            <button className="subscribe-button">Subscribe</button>
           </div>
         </div>
 
         <div className="footer-section">
-          <h4>Contact Us</h4>
-          <div className="contact-info">
-            <p><FaEnvelope /> info@visshopai.com</p>
-            <p><FaPhoneAlt /> +216 99 801 260</p>
-          </div>
-        </div>
-
-        <div className="footer-section">
-          <h4>Quick Links</h4>
+          <h4>Links</h4>
           <nav className="footer-links">
+            <Link to="/home">Home</Link>
             <Link to="/about">About</Link>
             <Link to="/solutions">Solutions</Link>
-            <Link to="/retailers">For Retailers</Link>
-            <Link to="/contact">Contact</Link>
+            <Link to="/services">Services</Link>
           </nav>
         </div>
 
         <div className="footer-section">
-          <h4>Get Started</h4>
-          <p className="cta-text">"Enhance your retail performance with data-driven insights"</p>
-          <Link to="/contact" className="footer-cta-button">
-            Contact Us
-          </Link>
+          <h4>Other</h4>
+          <nav className="footer-links">
+            <Link to="/contact">Contact</Link>
+            <Link to="/privacy">Privacy Policy</Link>
+            <Link to="/terms">Terms & Conditions</Link>
+          </nav>
+        </div>
+
+        <div className="footer-section">
+          <h4>Address</h4>
+          <p>📧 info@visshopai.com</p>
+          <p>📞 +216 9801260</p>
+          <p>📍 Sousse, Tunisia</p>
         </div>
       </div>
 
       <div className="footer-bottom">
-        <p>© 2025 VisShop AI. All rights reserved.</p>
+        <div className="footer-left">
+          <p>© 2025 VisShop AI - All rights reserved</p>
+        </div>
+       <div className="social-media-icons">
+  <a href="https://www.youtube.com/@visshopai" target="_blank" rel="noopener noreferrer" className="social-icon-link">
+    <FaYoutube className="social-icon" />
+  </a>
+  <a href="https://www.facebook.com/visshopai" target="_blank" rel="noopener noreferrer" className="social-icon-link">
+    <FaFacebook className="social-icon" />
+  </a>
+  <a href="https://www.linkedin.com/company/visshop-ai/posts/?feedView=all" target="_blank" rel="noopener noreferrer" className="social-icon-link">
+    <FaLinkedin className="social-icon" />
+  </a>
+</div>
       </div>
     </footer>
   );

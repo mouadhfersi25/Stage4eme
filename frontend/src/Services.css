@@ -1,0 +1,505 @@
+.services-page {
+  font-family: "Inter", sans-serif;
+  color: #1f2937;
+  line-height: 1.6;
+  background-color: #ffffff;
+  margin-top: -20px;
+}
+
+/* Hero Section */
+.services-hero-section {
+  background-color: #4f5df5; /* Purple background */
+  color: white;
+  padding: 8rem 2rem;
+  text-align: center;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  min-height: 200px;
+}
+
+.services-hero-content h1 {
+  font-size: 3.5rem;
+  font-weight: 800;
+  line-height: 1.1;
+  margin-bottom: 1rem;
+}
+
+.services-hero-content p {
+  font-size: 1.3rem;
+  color: rgba(255, 255, 255, 0.9);
+  max-width: 800px;
+  margin: 0 auto;
+}
+
+/* Service Detail Sections (Shoplifting, Retail Analytics, Smart Stock) */
+.service-detail-section {
+  display: flex;
+  align-items: center;
+  gap: 4rem;
+  padding: 6rem 2rem;
+  max-width: 1200px;
+  margin: 0 auto;
+  background-color: #ffffff;
+  position: relative; /* For dotted patterns */
+}
+
+/* Enhanced dotted patterns to match the first screenshot exactly */
+.service-detail-section::before,
+.service-detail-section::after {
+  content: "";
+  position: absolute;
+  width: 120px;
+  height: 120px;
+  background-image: radial-gradient(circle, #a78bfa 2px, transparent 2px);
+  background-size: 20px 20px;
+  z-index: 0;
+  opacity: 0.6;
+}
+
+.service-detail-section::before {
+  top: 20%;
+  left: -60px;
+}
+
+.service-detail-section::after {
+  bottom: 20%;
+  right: -60px;
+}
+
+.service-detail-section.reverse::before {
+  top: 20%;
+  right: -60px;
+  left: auto;
+}
+
+.service-detail-section.reverse::after {
+  bottom: 20%;
+  left: -60px;
+  right: auto;
+}
+
+.service-detail-section.reverse {
+  flex-direction: row-reverse;
+}
+
+.service-detail-content {
+  flex: 1;
+  text-align: left;
+  position: relative; /* Ensure content is above dots */
+  z-index: 1;
+}
+
+.service-subtitle {
+  font-size: 0.9rem;
+  font-weight: 600;
+  color: #8b5cf6; /* Purple accent */
+  text-transform: uppercase;
+  letter-spacing: 1px;
+  margin-bottom: 0.5rem;
+}
+
+.service-detail-title {
+  font-size: 2.5rem;
+  font-weight: 700;
+  line-height: 1.2;
+  margin-bottom: 1.5rem;
+  color: #1f2937;
+}
+
+.service-detail-description {
+  font-size: 1.1rem;
+  color: #4b5563;
+}
+
+.service-detail-image-container {
+  flex: 1;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  position: relative; /* Ensure image is above dots */
+  z-index: 1;
+}
+
+/* Enhanced image styling to match the first screenshot */
+.service-detail-image1,
+.service-detail-image2,
+.service-detail-image3 {
+  border-radius: 16px;
+  box-shadow: 0 15px 35px rgba(0, 0, 0, 0.15);
+  max-width: 100%;
+  height: auto;
+  transition: transform 0.3s ease;
+}
+
+.service-detail-image1:hover,
+.service-detail-image2:hover,
+.service-detail-image3:hover {
+  transform: translateY(-5px);
+}
+
+.service-detail-image1 {
+  max-width: 85%;
+}
+
+.service-detail-image2 {
+  max-width: 90%;
+}
+
+.service-detail-image3 {
+  max-width: 85%;
+}
+
+/* Built to Solve Retail Pain Section */
+.problem-solver-section {
+  padding: 6rem 2rem;
+  background-color: #f8f9fa; /* Lighter grey background to match screenshot */
+  text-align: center;
+}
+
+.problem-solver-subtitle {
+  font-size: 0.9rem;
+  font-weight: 600;
+  color: #8b5cf6;
+  text-transform: uppercase;
+  letter-spacing: 1px;
+  margin-bottom: 0.5rem;
+}
+
+.problem-solver-title {
+  font-size: 2.5rem;
+  font-weight: 700;
+  line-height: 1.2;
+  margin-bottom: 1rem;
+  color: #1f2937;
+}
+
+.problem-solver-description {
+  font-size: 1.1rem;
+  color: #4b5563;
+  max-width: 700px;
+  margin: 0 auto 3rem;
+}
+
+.problem-solver-grid {
+  display: grid;
+  grid-template-columns: repeat(4, 1fr); /* Force 4 columns to match screenshot layout */
+  gap: 2rem;
+  max-width: 1200px;
+  margin: 0 auto;
+}
+
+.problem-solver-card {
+  background: white;
+  padding: 2rem 1.5rem;
+  border-radius: 12px;
+  box-shadow: 0 5px 15px rgba(0, 0, 0, 0.05);
+  transition: transform 0.3s ease;
+  text-align: center;
+}
+
+.problem-solver-card:hover {
+  transform: translateY(-5px);
+}
+
+.problem-solver-icon-wrapper {
+  background-color: #e0e7ff;
+  border-radius: 50%;
+  width: 70px; /* Increased icon wrapper size */
+  height: 70px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin: 0 auto 1.5rem;
+}
+
+.problem-solver-icon {
+  color: #6366f1;
+  width: 36px; /* Increased icon size */
+  height: 36px;
+}
+
+.problem-solver-card h3 {
+  font-size: 1.3rem; /* Slightly smaller font size for better fit */
+  margin-bottom: 0.75rem;
+  color: #1f2937;
+  font-weight: 600;
+}
+
+.problem-solver-card p {
+  color: #4b5563;
+  font-size: 0.95rem; /* Slightly smaller text for better fit */
+  line-height: 1.5;
+}
+
+/* Perfect For All Types of Physical Retail Section */
+.sectors-section {
+  padding: 6rem 2rem;
+  background-color: #ffffff;
+  text-align: center;
+}
+
+.sectors-subtitle {
+  font-size: 0.9rem;
+  font-weight: 600;
+  color: #8b5cf6;
+  text-transform: uppercase;
+  letter-spacing: 1px;
+  margin-bottom: 0.5rem;
+}
+
+.sectors-title {
+  font-size: 2.5rem;
+  font-weight: 700;
+  line-height: 1.2;
+  margin-bottom: 1rem;
+  color: #1f2937;
+}
+
+.sectors-description {
+  font-size: 1.1rem;
+  color: #4b5563;
+  max-width: 700px;
+  margin: 0 auto 3rem;
+}
+
+.sectors-grid {
+  display: grid;
+  /* Changed from auto-fit to fixed 3 columns for 2x3 grid layout */
+  grid-template-columns: repeat(3, 1fr);
+  gap: 1.5rem;
+  max-width: 1000px;
+  margin: 0 auto;
+}
+
+.sector-card {
+  background: white;
+  padding: 1.5rem;
+  border-radius: 12px;
+  box-shadow: 0 5px 15px rgba(0, 0, 0, 0.05);
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 0.75rem;
+  text-decoration: none;
+  color: #1f2937;
+  font-weight: 500;
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.sector-card:hover {
+  transform: translateY(-5px);
+  box-shadow: 0 8px 20px rgba(99, 102, 241, 0.1);
+}
+
+.sector-icon-wrapper {
+  background-color: #e0e7ff; /* Lighter purple background for icon */
+  border-radius: 50%;
+  width: 50px;
+  height: 50px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.sector-icon {
+  color: #6366f1; /* Purple */
+  width: 24px;
+  height: 24px;
+}
+
+.sector-card span {
+  font-size: 0.95rem;
+  text-align: center;
+}
+
+/* Final CTA Section (similar to Home.css) */
+.final-cta-section {
+  padding: 6rem 2rem;
+  text-align: center;
+  background: #f9fafb; /* Light grey background */
+}
+
+.final-cta-section .section-title {
+  font-size: 2.5rem;
+  font-weight: 700;
+  line-height: 1.2;
+  margin-bottom: 1rem;
+  color: #1f2937;
+}
+
+.final-cta-section .section-description {
+  font-size: 1.1rem;
+  color: #4b5563;
+  max-width: 700px;
+  margin: 0 auto 2rem;
+}
+
+.request-demo-button {
+  background-color: #6366f1;
+  color: white;
+  border: none;
+  padding: 1.2rem 3rem;
+  border-radius: 8px;
+  font-size: 1.1rem;
+  font-weight: 600;
+  cursor: pointer;
+  transition: all 0.3s ease;
+}
+
+.request-demo-button:hover {
+  background-color: #4f46e5;
+  transform: translateY(-2px);
+  box-shadow: 0 5px 15px rgba(99, 102, 241, 0.3);
+}
+
+/* Responsive Design */
+@media (max-width: 1024px) {
+  .services-hero-content h1 {
+    font-size: 2.8rem;
+  }
+  .services-hero-content p {
+    font-size: 1.1rem;
+  }
+
+  .service-detail-section {
+    flex-direction: column;
+    gap: 3rem;
+    padding: 4rem 1.5rem;
+  }
+  .service-detail-section.reverse {
+    flex-direction: column; /* Stack columns normally on smaller screens */
+  }
+
+  .service-detail-content {
+    text-align: center;
+  }
+  .service-subtitle {
+    text-align: center;
+  }
+  .service-detail-title {
+    text-align: center;
+    font-size: 2rem;
+  }
+  .service-detail-description {
+    font-size: 1rem;
+  }
+
+  .problem-solver-section,
+  .sectors-section,
+  .final-cta-section {
+    padding: 4rem 1.5rem;
+  }
+
+  .problem-solver-title,
+  .sectors-title,
+  .final-cta-section .section-title {
+    font-size: 2rem;
+  }
+
+  .problem-solver-description,
+  .sectors-description,
+  .final-cta-section .section-description {
+    font-size: 1rem;
+  }
+
+  .problem-solver-grid,
+  .sectors-grid {
+    grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+  }
+
+  /* Hide decorative dots on smaller screens for cleaner look */
+  .service-detail-section::before,
+  .service-detail-section::after {
+    display: none;
+  }
+}
+
+@media (max-width: 768px) {
+  .services-hero-section {
+    padding: 6rem 1rem;
+    min-height: 300px;
+  }
+  .services-hero-content h1 {
+    font-size: 2.2rem;
+  }
+  .services-hero-content p {
+    font-size: 1rem;
+  }
+
+  .service-detail-section {
+    padding: 3rem 1rem;
+  }
+  .service-detail-title {
+    font-size: 1.8rem;
+  }
+
+  .problem-solver-section,
+  .sectors-section,
+  .final-cta-section {
+    padding: 3rem 1rem;
+  }
+
+  .problem-solver-title,
+  .sectors-title,
+  .final-cta-section .section-title {
+    font-size: 1.8rem;
+  }
+
+  .problem-solver-grid,
+  .sectors-grid {
+    grid-template-columns: 1fr; /* Stack cards on small screens */
+  }
+
+  .request-demo-button {
+    padding: 1rem 2rem;
+    font-size: 1rem;
+  }
+}
+
+@media (max-width: 480px) {
+  .services-hero-section {
+    padding: 4rem 0.8rem;
+  }
+  .services-hero-content h1 {
+    font-size: 1.8rem;
+  }
+  .services-hero-content p {
+    font-size: 0.9rem;
+  }
+
+  .service-detail-section {
+    padding: 2rem 0.8rem;
+  }
+  .service-detail-title {
+    font-size: 1.6rem;
+  }
+
+  .problem-solver-section,
+  .sectors-section,
+  .final-cta-section {
+    padding: 2rem 0.8rem;
+  }
+
+  .problem-solver-title,
+  .sectors-title,
+  .final-cta-section .section-title {
+    font-size: 1.6rem;
+  }
+
+  .problem-solver-description,
+  .sectors-description,
+  .final-cta-section .section-description {
+    font-size: 0.9rem;
+  }
+
+  .problem-solver-card,
+  .sector-card {
+    padding: 1.5rem 1rem;
+  }
+
+  .request-demo-button {
+    padding: 0.8rem 1.5rem;
+    font-size: 0.9rem;
+  }
+}

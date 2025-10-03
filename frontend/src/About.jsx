@@ -1,162 +1,155 @@
-import React from 'react';
-import aboutImage from './assets/25b05fb-45be-c556-8043-523efb8ae17_identify-person_1196-x-2100-YanyoGG8basZKBK0.avif';
-import './About.css';
+"use client"
+
+import { Lightbulb, Target, Zap, Shield } from "lucide-react"
+import "./About.css"
+import femm from "./assets/fem.png"
 
 const About = () => {
   return (
-    <div className="modern-about">
+    <div className="about-page">
       {/* Hero Section */}
-      <section className="modern-hero">
-        <div className="hero-content">
-          <div className="eyebrow">DEEP-TECH RETAIL SOLUTIONS</div>
-          <h1>
-            Transforming Retail with <span className="gradient-text">AI Vision</span>
-          </h1>
-          <p className="hero-description">
-            VisShop AI is redefining how physical stores understand shoppers through advanced computer vision and neuromarketing.
+      <section className="about-hero">
+        <div className="about-hero-content">
+          <h1 className="about-hero-title">We're Building the Smartest Eyes in Retail</h1>
+          <p className="about-hero-description">
+            Empowering retailers to combat losses, optimize systems, and understand their customers like never before.
           </p>
         </div>
       </section>
 
-      {/* Core Capabilities */}
-      <section className="capabilities-section">
-        <div className="capabilities-container">
-          <div className="capabilities-intro">
-            <h2>Advanced Retail Intelligence Platform</h2>
-            <p>
-              We specialize in transforming raw video data into actionable business intelligence — helping retailers reduce losses, improve customer experience, and make smarter decisions in real time.
+      {/* What Drives VisShop AI Section */}
+      <section className="drives-section">
+        <div className="drives-container">
+          <div className="drives-content">
+            <p className="drives-subtitle">ABOUT VISSHOP AI</p>
+            <h2 className="drives-title">What Drives VisShop AI</h2>
+            <p className="drives-description">
+              Our purpose, our promise, and our vision — driving smarter retail with real-time intelligence.
+            </p>
+            <button className="read-more-button">Book a Demo</button>
+          </div>
+          <div className="drives-visual">
+            <div className="chart-container">
+              <svg viewBox="0 0 600 400" className="drives-chart">
+                {/* Chart curves */}
+                <path d="M50 320 Q150 270 250 220 T450 160" stroke="#6366f1" strokeWidth="3" fill="none" />
+                <path
+                  d="M50 270 Q150 220 250 190 T450 130"
+                  stroke="#8b5cf6"
+                  strokeWidth="2"
+                  fill="none"
+                  strokeDasharray="5,5"
+                />
+                {/* Data points */}
+                <circle cx="120" cy="290" r="4" fill="#6366f1" />
+                <circle cx="220" cy="240" r="4" fill="#6366f1" />
+                <circle cx="320" cy="190" r="4" fill="#6366f1" />
+
+                {/* Vision section - repositioned and resized */}
+                <foreignObject x="420" y="100" width="160" height="90">
+                  <div className="chart-label">
+                    <h4>Vision</h4>
+                    <p>
+                      To revolutionize retail through intelligent AI solutions that prevent losses and optimize
+                      operations.
+                    </p>
+                  </div>
+                </foreignObject>
+
+                {/* Mission section - repositioned */}
+                <foreignObject x="280" y="200" width="160" height="70">
+                  <div className="chart-label">
+                    <h4>Mission</h4>
+                    <p>To become the world's leading AI partner for physical retail.</p>
+                  </div>
+                </foreignObject>
+
+                {/* Who We Are section - repositioned */}
+                <foreignObject x="50" y="330" width="160" height="70">
+                  <div className="chart-label">
+                    <h4>Who We Are</h4>
+                    <p>Deep-tech company bringing AI to physical retail.</p>
+                  </div>
+                </foreignObject>
+              </svg>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      {/* Principles Section */}
+      <section className="principles-section">
+        <div className="principles-container">
+          <h2 className="drives-subtitle">BENEFITS</h2>
+          <h2 className="principles-title">The Principles That Shape VisShop AI</h2>
+          <p className="principles-description">
+            These values drive every decision, every line of code, and every retail breakthrough.
+          </p>
+          <div className="principles-grid">
+            <div className="principle-card">
+              <div className="principle-icon-wrapper">
+                <Lightbulb className="principle-icon" />
+              </div>
+              <h3>Innovation</h3>
+              <p>We push beyond convention to create what hasn't existed before.</p>
+            </div>
+            <div className="principle-card">
+              <div className="principle-icon-wrapper">
+                <Target className="principle-icon" />
+              </div>
+              <h3>Precision</h3>
+              <p>Accuracy isn't optional – it's the heart of every AI insight we deliver.</p>
+            </div>
+            <div className="principle-card">
+              <div className="principle-icon-wrapper">
+                <Zap className="principle-icon" />
+              </div>
+              <h3>Speed & Agility</h3>
+              <p>We respond, adapt, and iterate faster than the market moves.</p>
+            </div>
+            <div className="principle-card">
+              <div className="principle-icon-wrapper">
+                <Shield className="principle-icon" />
+              </div>
+              <h3>Integrity</h3>
+              <p>We do what's right, even when no camera is watching.</p>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      {/* Born Out of Frustration Section */}
+      <section className="frustration-section">
+        <div className="frustration-container">
+          <div className="frustration-content">
+            <p className="drives-subtitle">OWNER WORDS</p>
+            <h2 className="frustration-title">Born Out of Frustration with Retail Losses</h2>
+            <p className="frustration-description">
+              We saw amazing tech everywhere — except inside physical stores. Cameras were everywhere, yet no insights
+              were being captured. VisShop AI was created to change that — to turn silent losses into powerful data.
             </p>
           </div>
-
-          <div className="capabilities-grid">
-            <div className="capability-card">
-              <div className="card-icon">🛡️</div>
-              <h3>Shoplifting Detection</h3>
-              <p>Real-time AI surveillance identifying suspicious behaviors with 98% accuracy</p>
-            </div>
-            <div className="capability-card">
-              <div className="card-icon">👥</div>
-              <h3>Behavior Analysis</h3>
-              <p>Deep learning algorithms decoding customer movement patterns and dwell times</p>
-            </div>
-            <div className="capability-card">
-              <div className="card-icon">📦</div>
-              <h3>Stock Optimization</h3>
-              <p>Automated inventory tracking and predictive restocking algorithms</p>
+          <div className="frustration-visual">
+            <div className="person-image-container">
+               <img src={femm || "/placeholder.svg"} alt="Shoplifting Detection" className="service-detail-image1" />
+              <div className="geometric-shape shape-cyan"></div>
+              <div className="geometric-shape shape-blue"></div>
+              <div className="geometric-shape shape-turquoise"></div>
             </div>
           </div>
         </div>
       </section>
 
-      {/* Mission & Vision Section */}
-      <section className="purpose-section">
-        <div className="purpose-container">
-          {/* Mission Card */}
-          <div className="purpose-card mission-card">
-            <div className="card-header">
-              <div className="card-icon">🎯</div>
-              <h2>Our Mission</h2>
-            </div>
-            <div className="card-content">
-              <p>
-                To enable retailers to make <strong>better, faster, and smarter</strong> decisions through real-time, AI-driven insights — 
-                improving store performance, enhancing customer satisfaction, and reducing operational losses.
-              </p>
-              <div className="impact-stats">
-                <div className="impact-stat">
-                  <div className="stat-value">+35%</div>
-                  <div className="stat-label">Operational Efficiency</div>
-                </div>
-                <div className="impact-stat">
-                  <div className="stat-value">-30%</div>
-                  <div className="stat-label">Shrinkage Reduction</div>
-                </div>
-              </div>
-            </div>
-          </div>
-
-          {/* Vision Card */}
-          <div className="purpose-card vision-card">
-            <div className="card-header">
-              <div className="card-icon">🔭</div>
-              <h2>Our Vision</h2>
-            </div>
-            <div className="card-content">
-              <p>
-                To become the <strong>leading AI partner</strong> for physical retail worldwide, transforming everyday stores into smart, 
-                data-informed environments where both business and customer thrive.
-              </p>
-              <div className="vision-features">
-                <div className="feature">
-                  <span>✓</span> Global retail transformation
-                </div>
-                <div className="feature">
-                  <span>✓</span> AI-powered store ecosystems
-                </div>
-                <div className="feature">
-                  <span>✓</span> Win-win retailer/customer value
-                </div>
-              </div>
-            </div>
-          </div>
+      {/* Let's Grow Together Section */}
+      <section className="grow-together-section">
+        <div className="grow-together-container">
+          <h2 className="grow-together-title">Let's Grow Together</h2>
+          <p className="grow-together-description">We grow when our clients succeed. Join us in transforming retail.</p>
+          <button className="demo-button">Request a Free Demo</button>
         </div>
-      </section>
-
-      {/* Stats Section */}
-      <section className="stats-section">
-        <div className="stats-container">
-          <div className="stat-item">
-            <div className="stat-value">100%</div>
-            <div className="stat-label">Real-Time Analysis</div>
-          </div>
-          <div className="stat-item">
-            <div className="stat-value">AI</div>
-            <div className="stat-label">Powered Technology</div>
-          </div>
-          <div className="stat-item">
-            <div className="stat-value">24/7</div>
-            <div className="stat-label">Store Monitoring</div>
-          </div>
-        </div>
-      </section>
-
-      {/* Values Section */}
-      <section className="values-section">
-        <div className="section-header">
-          <div className="eyebrow">OUR CORE VALUES</div>
-          <h2>What Guides Our Work</h2>
-        </div>
-        
-        <div className="values-grid">
-          <div className="value-card">
-            <h3>Innovation</h3>
-            <p>We constantly push boundaries by integrating the latest in AI and computer vision to stay ahead of market trends.</p>
-          </div>
-          <div className="value-card">
-            <h3>Precision</h3>
-            <p>Our solutions deliver accurate, behavior-based data that helps retailers act with confidence.</p>
-          </div>
-          <div className="value-card">
-            <h3>Speed & Agility</h3>
-            <p>Fast deployment and instant insights — delivering value from day one.</p>
-          </div>
-          <div className="value-card">
-            <h3>Integrity</h3>
-            <p>We operate with full transparency and uphold the highest ethical standards in data use.</p>
-          </div>
-        </div>
-      </section>
-
-      {/* CTA Section */}
-      <section className="cta-section">
-        <h2>Ready to Transform Your Retail Experience?</h2>
-        <p>
-          We're always open to collaborating with forward-thinking retailers who believe in the power of AI to revolutionize physical stores.
-        </p>
-        <button className="cta-button">Get in Touch</button>
       </section>
     </div>
-  );
-};
+  )
+}
 
-export default About;
+export default About
