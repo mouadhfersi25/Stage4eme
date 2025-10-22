@@ -1,0 +1,174 @@
+.privacy-page {
+  min-height: 100vh;
+  background-color: #ffffff;
+  margin-top: -20px; /* Adjusted to match other pages */
+}
+
+/* Hero Section */
+.privacy-hero {
+  background: linear-gradient(135deg, #6366f1 0%, #4F5DF5 100%);
+  color: white;
+  padding: 6rem 2rem;
+  text-align: center;
+}
+
+.privacy-hero-content {
+  max-width: 800px;
+  margin: 0 auto;
+}
+
+.privacy-hero-title {
+  font-size: 3rem;
+  font-weight: 700;
+  line-height: 1.2;
+  margin-bottom: 1.5rem;
+}
+
+.privacy-hero-description {
+  font-size: 1.2rem;
+  opacity: 0.9;
+  max-width: 600px;
+  margin: 0 auto;
+  line-height: 1.6;
+}
+
+/* Main Content */
+.privacy-content {
+  padding: 4rem 2rem;
+  background-color: #ffffff;
+  margin-left: -400px ;
+}
+
+.privacy-container {
+  max-width: 800px;
+  margin: 0 auto;
+}
+
+.privacy-section {
+  margin-bottom: 3rem;
+}
+
+.privacy-section h2 {
+  font-size: 2rem;
+  font-weight: 700;
+  color: #1f2937;
+  margin-bottom: 1.5rem;
+  line-height: 1.3;
+}
+
+.privacy-section h3 {
+  font-size: 1.2rem;
+  font-weight: 600;
+  color: #1f2937;
+  margin-bottom: 0.5rem;
+}
+
+.privacy-section p {
+  font-size: 1rem;
+  color: #4b5563;
+  line-height: 1.7;
+  margin-bottom: 1rem;
+}
+
+.privacy-subsection {
+  margin-bottom: 2rem;
+}
+
+.privacy-subsection h3 {
+  font-size: 1.1rem;
+  font-weight: 600;
+  color: #1f2937;
+  margin-bottom: 0.5rem;
+}
+
+.privacy-subsection p {
+  margin-bottom: 0.5rem;
+}
+
+/* Rights List */
+.privacy-rights-list {
+  list-style: none;
+  padding: 0;
+  margin: 1.5rem 0;
+}
+
+.privacy-rights-list li {
+  position: relative;
+  padding-left: 1.5rem;
+  margin-bottom: 0.5rem;
+  color: #4b5563;
+  line-height: 1.6;
+}
+
+.privacy-rights-list li::before {
+  content: "•";
+  color: #6366f1;
+  font-weight: bold;
+  position: absolute;
+  left: 0;
+}
+
+/* Links */
+.privacy-link {
+  color: #6366f1;
+  text-decoration: none;
+  font-weight: 500;
+}
+
+.privacy-link:hover {
+  text-decoration: underline;
+}
+
+/* Contact Section */
+.privacy-contact {
+  background-color: #f9fafb;
+  padding: 1.5rem;
+  border-radius: 8px;
+  margin-top: 1rem;
+}
+
+.privacy-contact p {
+  margin-bottom: 0.5rem;
+  color: #4b5563;
+}
+
+.privacy-contact p:last-child {
+  margin-bottom: 0;
+}
+
+/* Responsive Design */
+@media (max-width: 768px) {
+  .privacy-hero {
+    padding: 4rem 1rem;
+  }
+
+  .privacy-hero-title {
+    font-size: 2.2rem;
+  }
+
+  .privacy-hero-description {
+    font-size: 1.1rem;
+  }
+
+  .privacy-content {
+    padding: 3rem 1rem;
+  }
+
+  .privacy-section h2 {
+    font-size: 1.7rem;
+  }
+}
+
+@media (max-width: 480px) {
+  .privacy-hero-title {
+    font-size: 1.8rem;
+  }
+
+  .privacy-hero-description {
+    font-size: 1rem;
+  }
+
+  .privacy-section h2 {
+    font-size: 1.5rem;
+  }
+}

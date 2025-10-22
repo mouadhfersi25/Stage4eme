@@ -4,12 +4,17 @@ import Navbar from './Navbar';
 import Footer from './Footer';
 import Contact from './Contact';
 import About from './About';
-import Home from './Home';  // This is your imported Home component
+import Home from './Home'; 
+import Services from './Services';
+import Solutions from './Solutions';
+import Privacy from './privacy';
+ // This is your imported Solutions component
+ // This is your imported Home component
 
 // Remove these duplicate declarations:
 // const Home = () => <div className="page-content">Contenu de la page d'accueil</div>;
-const Solutions = () => <div className="page-content">Contenu des solutions</div>;
-const Services = () => <div className="page-content">Contenu des services</div>;
+
+
 
 function App() {
   return (
@@ -24,6 +29,7 @@ function App() {
             <Route path="/services" element={<Services />} />
             <Route path="/contact" element={<Contact />} />
             <Route path="/home" element={<Home />} />
+            <Route path="/privacy" element={<Privacy />} />
           </Routes>
         </div>
         <Footer />
